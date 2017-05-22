@@ -12,6 +12,7 @@ object MyBuild extends Build{
       description := "Additional type classes for the play-json serialization library",
       libraryDependencies ++=   Seq(
         "com.typesafe.play" %% "play-json" % "2.6.0-M6",
+        "org.joda" % "joda-convert" % "1.8.1",
         "org.scala-lang" % "scala-compiler" % scalaVersion.value % "compile",
         "org.scalatest" %% "scalatest" % "2.2.6" % "test"
       ),
